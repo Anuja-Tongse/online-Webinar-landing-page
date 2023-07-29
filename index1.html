@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Webinar Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Webinar</h1>
+        <p>Join us for an exciting webinar on [TOPIC]. This event will cover [TOPICS TO BE DISCUSSED]. Don't miss this opportunity to learn from industry experts.</p>
+        <button class="btn" onclick="showWebinarDetails()">Register Now</button>
+    </header>
+
+    <div class="container" id="webinar-details">
+        <h2>Webinar Details</h2>
+        <ul>
+            <li>Date: 1 August 2023</li>
+            <li>Time: 10 AM to 11AM </li>
+            <li>Duration: around 60 minutes</li>
+            <li>Location: Online</li>
+        </ul>
+        <button class="btn" onclick="showRegistrationForm()">Register Now</button>
+    </div>
+
+    <div class="container" id="registration-form">
+        <h2>Register Now</h2>
+        <form id="registrationForm" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+
+    <div class="container" id="confirmation-reminder">
+        <h2>Confirmation and Reminder</h2>
+        <p>Thank you for registering! An email with the webinar details will be sent to you shortly.</p>
+        <p>A reminder email will also be sent closer to the webinar date.</p>
+        <button class="btn" onclick="showAgendaAndSpeakerInfo()">View Agenda and Speaker Info</button>
+    </div>
+
+    <div class="container" id="agenda-speaker-info">
+        <h2>Agenda and Speaker Information</h2>
+        <h3>Agenda: Understanding Artificial Intelligence in Today's World</h3>
+        <ul>
+            <li>Session 1: Introduction to Artificial Intelligence</li>
+            <li>Session 2: Demystifying AI: A Comprehensive Overview</li>
+            <li>Session 3: AI in Business: Driving Growth and Innovation</li>
+            <li>Session 4: AI's Future: Trends and Opportunities</li>
+            <li>Session 5: Leveraging AI in Research and Academia</li>
+            <li>Session 6: Q&A Panel with AI Experts</li>
+            <!-- Add more agenda items as needed -->
+        </ul>
+
+        <h3>Speaker Information:</h3>
+        <p><strong>Speaker 1:</strong> SPEAKER NAME 1, Chief Data Scientist, TechSolutions Inc.</p>
+        <p><strong>Speaker 2:</strong> SPEAKER NAME 2, Natural Language Processing, AI Innovations Lab</p>
+        <!-- Add more speaker information as needed -->
+        <button class="btn" onclick="showThankYouPage()">Complete Registration</button>
+    </div>
+
+    <div class="container" id="thank-you">
+        <h2>Thank You!</h2>
+        <p>Thank you for attending our webinar. We hope you found it informative and engaging.</p>
+    </div>
+
+    <script src="scripts1.js">
+       
+    </script>
+</body>
+</html>
